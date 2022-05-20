@@ -1,0 +1,21 @@
+﻿<Window x:Class="temp_base.frames.AdminWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:temp_base.frames"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800">
+    <Grid Background="Azure">
+        <Grid Background="AliceBlue" HorizontalAlignment="Center" Height="100"  VerticalAlignment="Top" Width="800">
+            <Label Content="WorkToolsAdminPanel" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="SimSun"/>
+        </Grid>
+        <Button Content="Собрать все данные и отправить в РЭП" HorizontalAlignment="Left" Margin="234,129,0,0" VerticalAlignment="Top" Width="306"/>
+        <Button Content="Обновить данные пользователей" HorizontalAlignment="Left" Margin="234,175,0,0" VerticalAlignment="Top" Width="306"/>
+        <Button Content="Просмотреть информацию о пользователе" HorizontalAlignment="Left" Margin="222,257,0,0" VerticalAlignment="Top" Width="336"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="267,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" materialDesign:HintAssist.Hint="Введите ФИО пользователя"/>
+
+
+    </Grid>
+</Window>
