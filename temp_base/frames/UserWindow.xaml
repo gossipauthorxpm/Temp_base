@@ -1,4 +1,5 @@
 ﻿<Window x:Class="temp_base.frames.UserWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +7,16 @@
         xmlns:local="clr-namespace:temp_base.frames"
         mc:Ignorable="d"
         Title="UserWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="Azure">
+        <Grid Background="AliceBlue" HorizontalAlignment="Center" Height="100"  VerticalAlignment="Top" Width="800">
+            <Label Name="USER_FIO_LABEL" Content="Пользователь ФИО" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="SimSun"/>
+        </Grid>
+        <TextBlock Margin="47,150,343,240" TextWrapping="Wrap" Text="№ Участка" FontSize="18" Background="Gray"/>
+        <TextBlock Margin="47,184,343,206" TextWrapping="Wrap" Text="Дата последнего платежа" FontSize="18" Background="Gray"/>
+        <TextBlock Margin="47,218,343,172" TextWrapping="Wrap" Text="Сумма долга" FontSize="18" Background="Gray"/>
+        <TextBlock Margin="479,150,47,240" TextWrapping="Wrap" Text="" FontSize="18" Background="DarkSlateBlue" />
+        <TextBlock Margin="479,184,47,206" TextWrapping="Wrap" Text="" FontSize="18" Background="DarkSlateBlue" />
+        <TextBlock Margin="479,218,47,172" TextWrapping="Wrap" Text="" FontSize="18" Background="DarkSlateBlue" />
+
     </Grid>
 </Window>

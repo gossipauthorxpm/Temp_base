@@ -12,8 +12,8 @@
             <Label Content="Тема работы" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="24" FontFamily="SimSun"/>
         </Grid>
         <Grid Margin="220,100" Background="White">
-            <TextBox Height="30" Margin="50,50,50,0" TextWrapping="Wrap" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Введите ФИО"/>
-            <Button Content="Button" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="0,50,0,0"/>
+            <TextBox Name="TextBoxFIO" Height="30" Margin="50,50,50,0" TextWrapping="Wrap" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Введите ФИО"/>
+            <Button Content="Enter" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="0,50,0,0" Click="Button_Click"/>
         </Grid>
 
     </Grid>

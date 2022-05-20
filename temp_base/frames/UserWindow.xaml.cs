@@ -19,9 +19,12 @@ namespace temp_base.frames
     /// </summary>
     public partial class UserWindow : Window
     {
-        public UserWindow()
+        public UserWindow(string fio_user)
         {
             InitializeComponent();
+            // Инициализация всех элементов окна пользователя из БД по имени пользователя
+            USER_FIO_LABEL.Content = fio_user;  
+            
         }
     }
 }
