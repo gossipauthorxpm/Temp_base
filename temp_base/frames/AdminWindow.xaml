@@ -12,7 +12,7 @@
             <Label Content="WorkToolsAdminPanel" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="SimSun"/>
         </Grid>
         <Button Content="Собрать все данные и отправить в РЭП" HorizontalAlignment="Left" Margin="234,129,0,0" VerticalAlignment="Top" Width="306"/>
-        <Button Content="Обновить данные пользователей" HorizontalAlignment="Left" Margin="234,175,0,0" VerticalAlignment="Top" Width="306"/>
+        <Button Content="Обновить данные пользователей" HorizontalAlignment="Left" Margin="234,175,0,0" VerticalAlignment="Top" Width="306" Click="ButtonUpdateDataAdmin" Cursor="Hand"/>
         <Button Content="Просмотреть информацию о пользователе" HorizontalAlignment="Left" Margin="222,257,0,0" VerticalAlignment="Top" Width="336"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="267,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" materialDesign:HintAssist.Hint="Введите ФИО пользователя"/>
 

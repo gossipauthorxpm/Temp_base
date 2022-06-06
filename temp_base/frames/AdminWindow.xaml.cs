@@ -23,5 +23,11 @@ namespace temp_base.frames
         {
             InitializeComponent();
         }
+
+        private void ButtonUpdateDataAdmin(object sender, RoutedEventArgs e)
+        {
+            data.Database database = new data.Database();
+            database.SelectAllData();
+        }
     }
 }
