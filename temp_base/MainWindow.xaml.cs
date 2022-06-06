@@ -25,7 +25,7 @@ namespace temp_base
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonFIOClick(object sender, RoutedEventArgs e)
         {
             //Ввод ФИО и получение данных и БД
             if (!TextBoxFIO.Text.Equals(""))
@@ -33,6 +33,12 @@ namespace temp_base
                 frames.UserWindow user_window = new frames.UserWindow(TextBoxFIO.Text);
                 user_window.Show();
             }
+        }
+
+        private void ButtonAdminClick(object sender, RoutedEventArgs e)
+        {
+            frames.AuthorizationWindow authorizationWindow = new frames.AuthorizationWindow();
+            authorizationWindow.Show();
         }
     }
 }
