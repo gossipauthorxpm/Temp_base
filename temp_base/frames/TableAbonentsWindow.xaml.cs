@@ -15,19 +15,19 @@ using System.Windows.Shapes;
 namespace temp_base.frames
 {
     /// <summary>
-    /// Логика взаимодействия для AdminWindow.xaml
+    /// Логика взаимодействия для TableAbonentsWindow.xaml
     /// </summary>
-    public partial class AdminWindow : Window
+    public partial class TableAbonentsWindow : Window
     {
-        public AdminWindow()
+        public TableAbonentsWindow()
         {
             InitializeComponent();
-        }
+            data.Database database = new data.Database();
+            List<objects.Abonent> data = database.SelectAllData();
 
-        private void ButtonUpdateDataAdmin(object sender, RoutedEventArgs e)
-        {
-            frames.TableAbonentsWindow window = new frames.TableAbonentsWindow();
-            window.Show();
+            TableAbonents.ItemsSource = $"{{d:SampleData ItemCount={Convert.ToString(data.Count)}}}";
+            
+
         }
     }
 }

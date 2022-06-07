@@ -114,6 +114,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frames\TableAbonentsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frames\UserWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -133,6 +137,9 @@
     </Compile>
     <Compile Include="frames\AuthorizationWindow.xaml.cs">
       <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\TableAbonentsWindow.xaml.cs">
+      <DependentUpon>TableAbonentsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="frames\UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
