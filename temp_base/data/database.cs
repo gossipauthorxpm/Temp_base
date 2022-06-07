@@ -34,9 +34,8 @@ namespace temp_base.data
                 DateTime date = reader.GetDateTime("DATE_LAST_TRASACTION");
                 double sum_amount = reader.GetDouble("SUM_AMOUTH");
                 int money_fold = reader.GetInt32("money_fold");
-
-                objects.Abonent abonent = new objects.Abonent(id, name, REP, date, sum_amount, money_fold);
-                abonents.Add(abonent);
+                string adress = reader.GetString("ADDRESS");
+                abonents.Add(new objects.Abonent(id, name, REP, date, sum_amount, money_fold, adress));
             }
             
             return abonents;

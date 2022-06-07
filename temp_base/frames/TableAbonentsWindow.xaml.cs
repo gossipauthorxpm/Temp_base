@@ -24,8 +24,10 @@ namespace temp_base.frames
             InitializeComponent();
             data.Database database = new data.Database();
             List<objects.Abonent> data = database.SelectAllData();
-
-            TableAbonents.ItemsSource = $"{{d:SampleData ItemCount={Convert.ToString(data.Count)}}}";
+            
+            TableAbonents.ItemsSource = $"{{d:{data} ItemCount={Convert.ToString(data.Count)}}}";
+            
+            //TableAbonents.ItemsSource = data;
             
 
         }

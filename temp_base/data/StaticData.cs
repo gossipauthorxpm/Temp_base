@@ -8,7 +8,7 @@ namespace temp_base.data
 {
     internal static class StaticData
     {
-        public static string AdminLogin = "admin_temp_base";
-        public static string AdminPassword = "55555";
+        public static string AdminLogin = "1";
+        public static string AdminPassword = "1";
     }
 }

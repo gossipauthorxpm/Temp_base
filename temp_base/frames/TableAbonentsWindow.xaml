@@ -9,7 +9,13 @@
     <Grid>
         <DataGrid x:Name="TableAbonents" RenderTransformOrigin="0.488,0.669" Margin="0,-10,0,10">
             <DataGrid.Columns>
-                <DataGridTextColumn/>
+                <DataGridTextColumn x:Name="column_id" Header="ID"/>
+                <DataGridTextColumn x:Name="column_date" Header="Дата последней тразакции"/>
+                <DataGridTextColumn x:Name="column_fio" Header="ФИО"/>
+                <DataGridTextColumn x:Name="column_money" Header="Сумма счета"/>
+                <DataGridTextColumn x:Name="column_rep" Header="Номер РЭП"/>
+                <DataGridTextColumn x:Name="column_amouth" Header="Сумма долга"/>
+                <DataGridTextColumn x:Name="column_adress" Header="Адрес"/>
             </DataGrid.Columns>
         </DataGrid>
 
