@@ -14,7 +14,7 @@ namespace temp_base.data
 
         public Database()
         {
-            loginToDb = @"server=localhost;userid=root;password=1234;database=temp_base";
+            loginToDb = @"server=localhost;userid=root;password=5555;database=temp_base";
             connection = new MySqlConnection(loginToDb);
         }
 
