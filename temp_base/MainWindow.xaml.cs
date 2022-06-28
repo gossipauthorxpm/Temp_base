@@ -30,8 +30,19 @@ namespace temp_base
             //Ввод ФИО и получение данных и БД
             if (!TextBoxFIO.Text.Equals(""))
             {
-                frames.UserWindow user_window = new frames.UserWindow(TextBoxFIO.Text);
-                user_window.Show();
+                //Проверка на наличии имени в БД
+                data.Database database = new data.Database();
+                List<objects.Abonent> abonents = database.SelectAllData();
+                objects.Abonent abonent = CheckNameInDatabase(TextBoxFIO.Text, abonents);
+                if (abonent != null)
+                {
+                    frames.UserWindow user_window = new frames.UserWindow(TextBoxFIO.Text, abonent);
+                    user_window.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка! Данного пользователя нет в базе данных!\nПроверьте правильность ввода!.", "Ошибка");
+                }
             }
         }
 
@@ -39,6 +50,18 @@ namespace temp_base
         {
             frames.AuthorizationWindow authorizationWindow = new frames.AuthorizationWindow();
             authorizationWindow.Show();
+        }
+
+        private objects.Abonent CheckNameInDatabase(string fio_user, List<objects.Abonent> abonents)
+        {
+            foreach (objects.Abonent item in abonents)
+            {
+                if (item.GetName.Equals(fio_user))
+                {
+                    return item;
+                }
+            }
+            return null;
         }
     }
 }

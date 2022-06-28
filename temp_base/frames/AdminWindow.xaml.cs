@@ -29,5 +29,21 @@ namespace temp_base.frames
             frames.TableAbonentsWindow window = new frames.TableAbonentsWindow();
             window.Show();
         }
+
+        private void CheckInfoOfUserButtonClick(object sender, RoutedEventArgs e)
+        {
+            data.Database database = new data.Database();
+            List<objects.Abonent> abonents = database.SelectAllData();
+
+            foreach(objects.Abonent item in abonents)
+            {
+                if (name_abonent.Text.Equals(item.GetName))
+                {
+                    return_data_abonent.Content = $"ID - {item.GetId}. Дата последнего платежа - {item.GetDate}\nСумма долга - {item.GetSumAmouth}";
+                    return;
+                }
+            }
+            MessageBox.Show("Ошибка! Данного пользователя нет в БД!", "Ошибка!");
+        }
     }
 }

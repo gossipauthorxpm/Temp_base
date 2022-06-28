@@ -11,11 +11,11 @@
         <Grid Background="AliceBlue" HorizontalAlignment="Center" Height="100"  VerticalAlignment="Top" Width="800">
             <Label Name="USER_FIO_LABEL" Content="Пользователь ФИО" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="SimSun"/>
         </Grid>
-        <TextBlock Margin="47,150,343,240" TextWrapping="Wrap" Text="№ Участка" FontSize="18" Background="Gray"/>
-        <TextBlock Margin="47,184,343,206" TextWrapping="Wrap" Text="Дата последнего платежа" FontSize="18" Background="Gray"/>
-        <TextBlock Margin="47,218,343,172" TextWrapping="Wrap" Text="Сумма долга" FontSize="18" Background="Gray"/>
-        <TextBlock Margin="479,150,47,240" TextWrapping="Wrap" Text="" FontSize="18" Background="DarkSlateBlue" Foreground="White"/>
-        <TextBlock Margin="479,184,47,206" TextWrapping="Wrap" Text="" FontSize="18" Background="DarkSlateBlue" Foreground="White"/>
-        <TextBlock Margin="479,218,47,172" TextWrapping="Wrap" Text="" FontSize="18" Background="DarkSlateBlue" Foreground="White"/>
+        <TextBlock Margin="47,150,343,250" TextWrapping="Wrap" Text="№ Участка" FontSize="24" Background="White" FontFamily="SimSun"/>
+        <TextBlock Margin="47,184,343,206" TextWrapping="Wrap" Text="Дата последнего платежа" FontSize="20" Background="White" FontFamily="SimSun"/>
+        <TextBlock Margin="47,230,343,172" TextWrapping="Wrap" Text="Сумма долга" FontSize="24" Background="White" FontFamily="SimSun"/>
+        <TextBlock x:Name="number_poligon" Margin="479,150,47,240" TextWrapping="Wrap" Text="" FontSize="16" Background="DarkSlateBlue" Foreground="White"/>
+        <TextBlock x:Name="date_last_transaction" Margin="479,184,47,206" TextWrapping="Wrap" Text="" FontSize="16" Background="DarkSlateBlue" Foreground="White"/>
+        <TextBlock x:Name="amount_sum" Margin="479,218,47,172" TextWrapping="Wrap" Text="" FontSize="16" Background="DarkSlateBlue" Foreground="White"/>
     </Grid>
 </Window>

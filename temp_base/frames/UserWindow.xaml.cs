@@ -19,12 +19,27 @@ namespace temp_base.frames
     /// </summary>
     public partial class UserWindow : Window
     {
-        public UserWindow(string fio_user)
+        
+        private objects.Abonent abonent;
+        
+
+        public UserWindow(string fio_user, objects.Abonent abonent)
         {
             InitializeComponent();
             // Инициализация всех элементов окна пользователя из БД по имени пользователя
-            USER_FIO_LABEL.Content = fio_user;  
+            USER_FIO_LABEL.Content = fio_user;
+            this.abonent = abonent;
+            CreateFormLabels();
             
         }
+        private void CreateFormLabels()
+        {
+            number_poligon.Text = abonent.GetId;
+            date_last_transaction.Text = abonent.GetDate;
+            amount_sum.Text = abonent.GetSumAmouth;
+
+        }
+        
     }
+
 }

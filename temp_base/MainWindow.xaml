@@ -9,7 +9,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="AntiqueWhite">
         <Grid HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="800" Background="LightCoral">
-            <Label Content="Тема работы" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="24" FontFamily="SimSun"/>
+            <Label Content="Теплосеть" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="24" FontFamily="SimSun"/>
             <Button Content="AdminPanel" HorizontalAlignment="Left" Margin="70,37,0,0" VerticalAlignment="Top" Click="ButtonAdminClick"/>
         </Grid>
         <Grid Margin="220,100" Background="White">

@@ -27,7 +27,7 @@ namespace temp_base.frames
             // Заполнение таблицы данными из SQL запроса
             foreach(objects.Abonent obj in data)
             {
-                AbonentsTable.Items.Add($"ID - {obj.GetId}. ФИО - {obj.GetName}. АДРЕС - {obj.GetAdress}. НОМЕР РЭП - {obj.GetREP}. ДАТА ПОСЛЕДНЕГО ПЛАТЕЖА - {obj.GetDate}. НОМЕР СЧЕТА - {obj.GetMoneyFold}. СУММА ДОЛГА{obj.GetSumAmouth}");
+                AbonentsTable.Items.Add($"ID - {obj.GetId}. ФИО - {obj.GetName}. АДРЕС - {obj.GetAdress}. НОМЕР РЭП - {obj.GetREP}. ДАТА ПОСЛЕДНЕГО ПЛАТЕЖА - {obj.GetDate}. НОМЕР СЧЕТА - {obj.GetMoneyFold}. СУММА ДОЛГА - {obj.GetSumAmouth}");
             }
 
         }
