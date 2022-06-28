@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31613.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "temp_base", "temp_base\temp_base.csproj", "{6328B617-B5C4-4169-B2F1-6F50B1801B84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7FFA17D2-39B1-4931-9EB8-EB847CED5E0C}"
+	ProjectSection(SolutionItems) = preProject
+		E:\Фаза\Пракика\БД\Запросы\temp_base.sql = E:\Фаза\Пракика\БД\Запросы\temp_base.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
